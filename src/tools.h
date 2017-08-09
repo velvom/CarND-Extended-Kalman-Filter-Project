@@ -29,6 +29,16 @@ public:
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
 
+  /**
+  * Normalize angle in radians to the range [-pi, pi)
+  */
+  static float NormalizeAngle1(float r);
+
+  /**
+  * Normalize angle in radians to the range [-pi, pi]
+  */
+  static float NormalizeAngle2(float r);
+
 };
 
 #endif /* TOOLS_H_ */
